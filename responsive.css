@@ -1,0 +1,121 @@
+*{box-sizing: border-box;}
+html{
+  scroll-behavior: smooth;
+}
+:root{
+  --primaryColor: #a31ef4;
+  --primaryLight: #da5cff;
+  --PrimaryDark: #6c00c0;
+}
+ /* title */
+ .title{
+   color:var(--primaryColor);
+   text-align: center;
+   font-size: 5em;
+   text-shadow: 2px 2px 5px var(--PrimaryDark)
+ }
+ /* navigation tabs */
+ .navigation{
+   background-color: var(--primaryColor);
+ }
+.navigation a{
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  padding: 1em 0px;
+  background-color: var(--PrimaryDark);
+  text-decoration: none;
+  color: var(--primaryLight);
+  font-size: 1.2em;
+}
+.navigation a:hover{
+  background-color: var(--primaryLight);
+  color: var(--PrimaryDark);
+  text-decoration: underline;
+
+}
+/*-- cards --*/
+.cardcontainer{
+  display: inline-block;
+}
+.card{
+  background-color: var(--primaryColor);
+  text-shadow: 2px 2px 5px var(--PrimaryDark);
+  width: 20%;
+  margin: 2.5%;
+  float: left;
+}
+.imgcard{
+  width: 100%;
+}
+.titleCard{
+  text-align: center;
+}
+.pCard{
+  padding: 0.5em;
+  height: 13em;
+  overflow: hidden;
+
+}
+.creditCard{
+  padding: 0.5em;
+  font-size: 0.7em;
+  font-style: italic;
+
+}
+/* footer infomation */
+.footerInfo{
+  text-align: center;
+  margin-top: ridge 1px var(--PrimaryDark);
+  background-color: var(--primaryColor);
+  padding: 1em 0em;
+}
+/* -- large resolution --*/
+@media only screen and (max-width:1350px){
+
+  .pCard{
+    height: 15em;
+  }
+}
+/* -- medium resolution table--*/
+@media only screen and (max-width:1140px) {
+
+  .card{
+    width: 40%;
+    margin-left: 6%;
+
+  }
+  .pCard{
+    height: 11em;
+  }
+}
+/* -- medium resolution mini table--*/
+@media only screen and (max-width:850px) {
+
+  .navigation a{
+    width: 32.5%;
+  }
+  .pCard{
+    height: 14em;
+  }
+}
+/* -- small resolution : Large smartphone --*/
+@media only screen and (max-width:700px) {
+
+  .navigation a{
+    width: 100%;
+    margin-bottom: 1px;
+  }
+  .card{
+    width: 80%;
+    margin-left: 10%;
+  }
+
+}
+/* -- small resolution small smartphone--*/
+@media only screen and (max-width:500px) {
+
+  .title{
+    font-size: 3em;
+  }
+}
